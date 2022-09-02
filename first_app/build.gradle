@@ -9,6 +9,10 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-repositories {
-    google()
+// this is added by developer
+allprojects{
+    repositories {
+        google()
+        jcenter()
+    }
 }

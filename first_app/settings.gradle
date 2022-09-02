@@ -8,10 +8,12 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-//    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // made changes here
+    // Here you have to change RepositoriesMode.FAIL_ON_PROJECT_REPOS to RepositoriesMode.PREFER_PROJECT
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT) // made changes here
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
 }
 rootProject.name = "first_app"
