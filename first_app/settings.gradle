@@ -1,0 +1,23 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // made changes here
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "first_app"
+include ':app'
+setBinding(new Binding([gradle: this]))                                // new
+evaluate(new File(                                                     // new
+        settingsDir.parentFile,                                              // new
+        'first_module/.android/include_flutter.groovy'                         // new
+))
