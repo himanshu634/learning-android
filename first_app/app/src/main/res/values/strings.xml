@@ -32,4 +32,8 @@ This view of the cell as a contingent, constructional entity challenge
         te of Evolutionary Biology in Barcelona. Far from the pinnacle
         of the tree of life, humans become just one of the many things
         our cells are capable of doing.</string>
+    <string name="from_android">From Android</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

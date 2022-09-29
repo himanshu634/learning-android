@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.first_app">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <dist:module dist:instant="true" />
 
@@ -16,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First_app"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -26,13 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="io.flutter.embedding.android.FlutterActivity"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-            android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Material3.Light"
-            android:windowSoftInputMode="adjustResize"
-            />
     </application>
 
 </manifest>

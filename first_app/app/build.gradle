@@ -6,6 +6,10 @@ plugins {
 android {
     compileSdk 32
 
+    buildFeatures{ // added this codeblock
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.example.first_app"
         minSdk 21
@@ -32,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.first_app'
 }
 //String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
 //repositories {
@@ -50,6 +55,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

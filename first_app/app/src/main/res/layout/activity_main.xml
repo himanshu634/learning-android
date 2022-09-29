@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="277dp" />
+    <io.flutter.embedding.android.FlutterView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flView" />
 
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Launch Flutter"
-        android:onClick="doSomething"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="424dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+       <Button
+           android:id="@+id/button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:onClick="doSomething"
+           android:text="From android"
+           android:layout_centerInParent="true"/>
+
+</RelativeLayout>
